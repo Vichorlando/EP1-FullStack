@@ -1,0 +1,170 @@
+
+:root {
+    /* Color Palette: Natural & Elegant - Renovada y Viva */
+    --sage-green: #2E9E66;
+    --dusty-rose: #D9536F;
+    --terracotta: #B97C5B;
+    --off-white: #F8F6F4;
+    --dark-charcoal: #36454F;
+    --soft-gold: #B8860B;
+
+    /* Typography */
+    --font-family-serif: 'Playfair Display', serif;
+    --font-family-sans-serif: 'Montserrat', sans-serif;
+
+    /* Bootstrap Variable Overrides */
+    --bs-primary: var(--sage-green);
+    --bs-secondary: var(--dusty-rose);
+    --bs-body-color: var(--dark-charcoal);
+    --bs-body-bg: var(--off-white);
+    --bs-font-sans-serif: var(--font-family-sans-serif);
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-serif);
+    color: var(--dark-charcoal);
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #258555;
+    border-color: #258555;
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #C43D59;
+    border-color: #C43D59;
+}
+
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #fff;
+}
+
+.card {
+    background-color: #F8F0E3;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--sage-green);
+    box-shadow: 0 0 0 0.25rem rgba(46, 158, 102, 0.25);
+}
+
+/* ---------- Header / Navbar ---------- */
+.navbar {
+    background-color: #F5F5F5 !important;
+}
+
+.navbar .navbar-brand {
+    color: #333333 !important;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand img {
+    max-height: 38px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar .nav-link {
+    color: #333333 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: #000000 !important;
+}
+
+.navbar .dropdown-menu {
+    background-color: #F5F5F5;
+    border: 1px solid #e0e0e0;
+}
+
+.navbar .dropdown-item {
+    color: #333333;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background-color: #e5e5e5;
+    color: #111111;
+}
+
+/* ---------- Hero / Bienvenida Inicio ---------- */
+.hero-bienvenida {
+    background-color: #E4C3A9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Panel de Filtros ---------- */
+.panel-filtros {
+    background-color: #E4C3A9;
+    border-color: rgba(0, 0, 0, 0.08) !important;
+    position: sticky;
+    top: 2rem;
+    z-index: 10;
+}
+
+/* ---------- Checkboxes y Radios ---------- */
+.form-check-input:checked {
+    background-color: #456B76 !important;
+    border-color: #456B76 !important;
+}
+
+.form-check-input:focus {
+    border-color: #456B76;
+    box-shadow: 0 0 0 0.25rem rgba(69, 107, 118, 0.25);
+}
+
+/* ---------- Formularios de Autenticación / Login ---------- */
+.card-auth {
+    background-color: #E4C3A9;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.card-auth .form-control {
+    background-color: #ffffff;
+}
+
+.card-auth a {
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+
+/* ---------- Modal de Novedades / Info-box ---------- */
+#infoModal .modal-content {
+    background-color: #E4C3A9;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#infoModal .modal-header,
+#infoModal .modal-footer {
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
